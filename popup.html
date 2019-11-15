@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buget, the only budgeting app you'll need!</title>
+        <script src ="jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="path/to/chartjs/dist/Chart.min.css">
+        
+        <script src ="popup.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <a href="#"><img class="smaller green-border" src="https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_960_720.jpg" alt="lodsaemone"></a>
+        <h1 id="hello">Money is king</h1>
+        <p>Welcome to Buget, the finest financing gizmo you'll ever need! </p>        
+        <h2>Enter the limit you want to set!</h2>
+        <h5>How often would you like a spending evaluation?</h5>
+        <label><input type="radio" name="spend-interval">Daily</label>
+        <label><input type="radio" name="spend-interval">Weekly</label>
+        <label><input type="radio" name="spend-interval" checked>Monthly</label>
+        <label><input type="radio" name="spend-interval">Yearly</label>
+        <br>
+        <h7>What kind of purchase is this?</h7>
+        <form>
+            <label><input type="radio" name="spend" value = "food" checked>Foodstuff</label>
+            <label><input type="radio" name="spend" value = "clothes">Clothing</label>
+            <label><input type="radio" name="spend" value = "entertainment">Entertainment</label>
+            <label><input type="radio" name="spend" value = "supplies">Supplies</label>
+            <label><input type="radio" name="spend" value = "other">Other</label>
+        </form>
+        <br><input type="text" id = "amount"> 
+        <br><input type="submit" id = "spendMones" value = "Spend">
+        <h3>Total money spent: <span id = "total" style="color:red"></span></h3>
+        <h4>Current budget: <span id ="limit" style="color:red"></span></h4>
+        <span id = "ft" hidden></span>
+        <canvas id="myChart" width="200" height="200"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+        <script src ="chart.js"></script>
+    </body>
+</html>
